@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(220, 214, 214, 0.349);
+}
+.header{
+    width: 100%;
+    min-width: 600px;
+    background: linear-gradient(210deg,rgba(246, 79, 98, 0.665),rgba(27, 30, 190, 0.974));
+    padding: 10px;
+    box-shadow: 0px 2px 15px rgba(255, 0, 0, 0.641);
+}
+.active{
+    color: cyan;
+    cursor: pointer;
+}
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    font-size: 52px;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-radius: 60px;
+    padding: 10px;
+}
+span{
+    color: rgba(167, 238, 128, 0.952);
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    font-family: verdana;
+    font-weight: 700;
+    margin: 30px 50px 0px;
+}
+.input-field{
+    display: flex;
+    width: 35%;
+    min-width: 500px;
+    height: 4em;
+    margin-top: 7px;
+    margin-left: 50px;
+    border: 3px solid white;
+    outline: none;
+    border-radius: 30px;
+}
+input{
+background-color: transparent;
+border: none;
+outline: none;
+font-size: 25px;
+font-family: cursive;
+padding: 10px 30px;
+
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.457);
+}
+button{
+    border: none;
+    outline: none; 
+    margin-left: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+svg{
+    height: 50px;
+    width: 30px;
+    
+}
+#image-display{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    justify-content: center;
+    margin-top: 70px;
+}
+#image-display img{
+    height: 100%;
+    width: 100%;
+    padding: 50px;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .header{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .input-field {
+        display: flex;
+        width: 35%;
+        min-width: 500px;
+        height: 4em;
+        margin-top: 30px;
+        margin-left: 100px;
+        border: 1px solid white;
+        outline: none;
+        border-radius: 30px;
+    }
+    #image-display {
+        display: grid;
+        grid-template-columns: repeat(2,350px);
+        justify-content: center;
+        margin-top: 70px;
+    }
+}
+
